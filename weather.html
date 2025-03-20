@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'weather_app/style.css' %}">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   
+</head>
+<body>
+   
+
+
+    <div class="weather-app">
+        <!-- 📌 Sidebar -->
+        <div class="sidebar">
+            <i class="fas fa-cloud"></i>
+            <i class="fas fa-sun"></i>
+            <i class="fas fa-cog"></i>
+        </div>
+         
+        <!-- 🔥 Main Content -->
+        <div class="main-content">
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" id="cityInput" placeholder="Enter city name...">
+                <button id="searchBtn">🔍</button>
+            </div>
+
+            <!-- Weather Display -->
+            <div class="weather-info">
+                <h2 id="cityName">City</h2>
+                <div class="weather-icon"><img id="weatherIcon" src="" alt="Weather Icon"></div>
+                <div class="weather-icon">
+                    <span id="weatherEmoji">☁️</span>
+                    <img id="weatherIcon" src="" style="display: none;">
+                </div>
+                
+                <div class="temperature" id="temp">--°C</div>
+                <p id="description">Weather condition</p>
+                <p>Humidity: <span id="humidity">--%</span></p>
+            </div>
+
+            <!-- Forecast Section -->
+            <div class="forecast" id="forecastContainer">
+                <!-- Days will be added dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <script src="{% static 'weather_app/script.js' %}"></script>
+</body>
+</html>

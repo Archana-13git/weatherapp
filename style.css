@@ -1,0 +1,143 @@
+/* 🌟 Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🌌 Full Page */
+body {
+    background-color: #0d1117;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 🔥 Weather App Container */
+.weather-app {
+    display: flex;
+    background: #1c1f26;
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+/* 📌 Sidebar */
+.sidebar {
+    width: 80px;
+    background: #15171c;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.sidebar i {
+    font-size: 24px;
+    color: #aaa;
+    transition: 0.3s;
+}
+
+.sidebar i:hover {
+    color: white;
+    transform: scale(1.1);
+}
+
+/* 🌤️ Main Weather Section */
+.main-content {
+    flex: 1;
+    padding: 30px;
+    color: white;
+}
+
+/* 📍 Search Bar */
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    background: #2a2d37;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    color: white;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.search-bar button {
+    background: #ff5f6d;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-bar button:hover {
+    background: #ff0844;
+}
+
+/* 🌡️ Weather Info */
+.weather-info h2 {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.weather-info .temperature {
+    font-size: 55px;
+    font-weight: 700;
+    color: #ffcc00;
+}
+
+/* 📊 Forecast Section */
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.forecast .day {
+    background: #2a2d37;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 50px;
+}
+/* 🌌 Forecast Section */
+.forecast {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* 🎨 Forecast Days */
+.forecast .day {
+    background: #2a2d37;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 14px;
+    width: 80px;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* 🟡 Hover Effect */
+.forecast .day:hover {
+    transform: scale(1.1);
+   
+    color: white;
+}
+
